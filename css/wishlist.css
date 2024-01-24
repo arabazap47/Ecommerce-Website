@@ -1,0 +1,108 @@
+.cart-products{
+    padding: 0 7rem;
+}
+.cart-products table{
+    width: 100%;
+    margin-top: 2rem;
+    
+    
+    
+}
+
+
+.cart-products table tbody tr, td{
+    
+    border-bottom: 2px solid #e6e6e6;
+}
+table thead tr th{
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e6e6e6;
+}
+table tr td:nth-child(1){
+    text-align: center;
+    height: 6rem;
+    
+
+
+    img{
+    width: 5rem;
+    height: 5rem;
+    padding-top: 0.5rem;
+    }
+}
+.cart-products table tr td:nth-child(2){
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    color: #088179;
+    font-weight: 600;
+    font-size: 0.9rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    span{
+        color: rgb(72, 72, 72);
+        font-weight: 500;
+    }
+}
+
+.cart-products table tr :is(td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6)){
+    text-align: center ;
+    color: rgb(72, 72, 72);
+
+}
+.cart-products table tr td:nth-child(4) input[type=number]{
+    width: 5rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 0.2rem;
+
+
+    &:focus{
+        outline: none;
+    }
+    
+}
+
+.cart-products table tr td:nth-child(6){
+    color: #909297;
+    font-size: 0.8rem;
+}
+
+
+
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content:flex-end;
+    margin-top: 2rem;
+}
+
+.btns button{
+    padding: 0.8rem 1.2rem;
+    background-color: #088179;
+    color: white;
+    border-radius: 0.2rem;
+    border: 1px solid #088179;
+    font-weight: 600;
+    transition: all ease-in-out 0.2s;
+
+
+
+    &:hover{
+        color: #088179;
+        background-color: white;
+        border: 1px solid #088179;
+    }
+    
+    
+
+    i{
+        padding-right: 0.4rem;
+    }
+}

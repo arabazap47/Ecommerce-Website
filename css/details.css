@@ -1,0 +1,56 @@
+
+table, th, td{
+    border: 1px solid #e6e6e6;
+    border-collapse: collapse ;
+    font-size: 0.8rem;
+    padding:  0.5rem 1rem;
+    text-align: start;
+}
+
+table{
+    margin-top: 3rem;
+    width: 100%;
+
+}
+.table-content{
+    
+    margin-top: 2rem;
+}
+.info{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+
+
+    div:nth-child(1) a{
+        color: #088179;
+        
+
+    }
+
+
+    a{
+        text-decoration: none;
+        font-weight: 600;
+        color: rgb(72, 72, 72);
+        font-size: 1.1rem;
+    }
+
+}
+
+
+
+.related-products{
+    margin-top: 3rem;
+    font-weight: 600;
+    color: #088179;
+    font-size: 1.1rem;
+
+
+    span{
+        color: black;
+
+    }
+}
+

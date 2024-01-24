@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+.items-section{
+    margin-top: 2rem;
+}
+.container{
+
+    p{
+        font-size: 0.938rem;
+        color: #636363;
+
+        span{
+            color: #088179;
+            font-weight: 600;
+        }
+    }
+}
+
+.page-no{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    button:first-child{
+        width: 1.5rem;
+        height: 1.5rem;
+        border: none;
+        border-radius: 0.2rem;
+        background: #088179;
+        color: white;
+        font-weight: 400;
+        font-size: 0.75rem;
+    }
+    :is(button:nth-child(2), button:nth-child(3), button:nth-child(4), button:nth-child(5), button:nth-child(6)){
+        width: 1.5rem;
+        height: 1.5rem;
+        border: none;
+        border-radius: 0.2rem;
+        background: none;
+        font-size: 0.75rem;
+
+        &:hover{
+            background: #088179;
+            color: white;
+        }
+
+    }
+
+}
+
+
+
+
+
+/* mobile responsive */
+
+@media (width <= 480px){
+    .items-section .featured-product{
+        margin-top: 3rem;
+    }
+    .container {
+        height: 0;
+      }
+
+
+    .items-section .featured-product .card-container{
+        grid-template-columns: repeat(1, auto);
+    
+        .card {
+          width: 100%;
+        }
+      }
+}

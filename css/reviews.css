@@ -1,0 +1,38 @@
+.table-content{
+    
+    margin-top: 2rem;
+}
+.info{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+
+
+    div:nth-child(2) a{
+        color: #088179;
+        
+
+    }
+
+
+    a{
+        text-decoration: none;
+        font-weight: 600;
+        color: rgb(72, 72, 72);
+        font-size: 1.1rem;
+    }
+
+}
+
+.related-products{
+    margin-top: 3rem;
+    font-weight: 600;
+    color: #088179;
+    font-size: 1.1rem;
+
+
+    span{
+        color: black;
+    }
+}

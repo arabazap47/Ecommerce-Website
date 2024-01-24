@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.table {
+  margin-top: 4rem;
+}
+main {
+  padding: 0 7rem;
+}
+
+table,
+tr,
+td {
+  border: 1px solid #e6e6e6;
+  border-collapse: collapse;
+  width: 25rem;
+  text-align: center;
+}
+td {
+  padding: 0.5rem 0.5rem;
+}
+table tr:first-child td > img {
+  width: 25rem;
+  height: 25rem;
+}
+table tr td:first-child {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #90908f;
+  width: 10rem;
+}
+table tr:nth-child(2) :is(td:nth-child(2), td:nth-child(3), td:nth-child(4)) {
+  color: #088179;
+  font-weight: 600;
+  font-size: 1rem;
+}
+table tr:nth-child(3) :is(td:nth-child(2), td:nth-child(3), td:nth-child(4)) {
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+table tr:nth-child(4) :is(td:nth-child(2), td:nth-child(3), td:nth-child(4)) {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: rgb(72, 72, 72);
+}
+table tr:nth-child(5) :is(td:nth-child(2), td:nth-child(3), td:nth-child(4)) {
+  letter-spacing: 0.2rem;
+  font-size: 1.4rem;
+
+  & i:nth-child(1) {
+    color: #ffbb4c;
+  }
+  & i:nth-child(2) {
+    color: #ff4c61;
+  }
+  & i:nth-child(3) {
+    color: yellow;
+  }
+}
+table tr:nth-child(6) :is(td:nth-child(2), td:nth-child(3), td:nth-child(4)) {
+  font-size: 0.8rem;
+  color: #088179;
+}
+table tr:nth-child(7) :is(td:nth-child(2), td:nth-child(3), td:nth-child(4)) {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: rgb(72, 72, 72);
+}
+table tr:nth-child(8) :is(td:nth-child(2), td:nth-child(3), td:nth-child(4)) {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: rgb(72, 72, 72);
+}
+table
+  tr:nth-child(9)
+  :is(td:nth-child(2), td:nth-child(3), td:nth-child(4))
+  button {
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  background: #088179;
+  border: 1.5px solid #088179;
+  border-radius: 0.2rem;
+  transition: all ease-in-out 0.2s;
+
+  &:hover {
+    background: white;
+    color: #088179;
+    border: 1.5px solid #088179;
+    box-sizing: border-box;
+  }
+}
+table
+  tr:nth-child(10)
+  :is(td:nth-child(2), td:nth-child(3), td:nth-child(4))
+  i {
+  font-size: 0.9rem;
+  color: rgb(72, 72, 72);
+
+  &:hover {
+    color: #088179;
+  }
+}
+
+/* tablet view */
+
+@media (width <= 1024px) {
+  table,
+  tr,
+  td {
+    width: 38rem;
+  }
+  table tr:first-child td > img {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+/* mobile view */
+@media (width <= 480px) {
+    table,
+  tr,
+  td {
+    width: 20rem;
+  }
+  table tr:first-child td > img {
+    width: 40%;
+    height: 40%;
+  }
+}

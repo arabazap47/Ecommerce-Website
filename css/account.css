@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.dash-board .account {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-top: 3rem;
+}
+.account .dash {
+  width: 80%;
+}
+
+.dash ul li {
+  list-style: none;
+  border: 1px solid #e6e6e6;
+  border-collapse: collapse;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  padding-left: 2rem;
+  font-size: 0.8rem;
+  transition: all ease-in-out 0.2s;
+
+  &:hover {
+    background: #088179;
+    color: white;
+  }
+
+  &:first-child {
+    background-color: #088179;
+    color: white;
+  }
+}
+.account .dashboard {
+  width: 100%;
+}
+.dashboard div:first-child {
+  background: #ededed;
+  height: 3.3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+.dashboard div:last-child {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  border: 1px solid #ededed;
+  padding-left: 1rem;
+}
+
+/* tablet view */
+
+@media (width <=1024px) {
+  main {
+    padding: 0 0.8rem;
+  }
+  .dash-board .account {
+    grid-template-columns: 40% 60%;
+  }
+}
+
+@media (width <= 480px) {
+  main {
+    padding: 0 0.8rem;
+  }
+  .dash-board .account {
+    grid-template-columns: 100%;
+    row-gap: 3rem;
+  }
+  .dash {
+    width: 20rem;
+  }
+}
