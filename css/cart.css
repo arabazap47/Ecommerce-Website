@@ -184,7 +184,31 @@
    
 }
 
-.cart-total{
+.cart-total-part {
+    height: fit-content;
+    border: 2px solid #e6e6e6;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  
+    table {
+      border-collapse: collapse;
+  
+      td {
+        /* text-align: left; */
+        border: 1px solid #e6e6e6;
+        padding: 0.7rem 0.5rem;
+      }
+  
+      tr td:last-child {
+        font-size: 1rem;
+      }
+    }
+}
+
+/* .cart-total{
     padding: 0 1rem;
     border: 1px solid #e6e6e6;
     border-radius: 0.2rem;
@@ -198,5 +222,5 @@
 .totals tr > td{
     width: 20rem;
     height: 1rem;
-}
+} */
 
